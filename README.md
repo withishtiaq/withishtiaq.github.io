@@ -20,7 +20,8 @@
 - 🏙 A lifetime insider and Mentor at [Course Hero](https://www.coursehero.com/profile/withishtiaq/).
 - ✍ I write technical blogs, You can visit my blog site at [DEV](https://dev.to/withishtiaq).
 - ❤ Contributing to Open Source.
-- 💻 Visit my [Portfolio](https://withishtaq.github.io) for more details about me.
+- 💻 Visit my [Resume](https://drive.google.com/file/d/1VWK8L2A2_ycXC2GiopDkuyG-VqW0VLO-/view?usp=sharing) for more details about me.
+<!- -  💻 Visit my [Portfolio](https://withishtaq.github.io) for more details about me. -->
 <!--End Intro-->
 
 <!--Profile Count Badge-->
