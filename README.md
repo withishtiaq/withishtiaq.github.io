@@ -8,19 +8,19 @@
 
 <!--Header Name-->
 # <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> ɪ'ᴍ ᴋɪʀᴀɴ! 
-*Digital Craftsman (Developer / Programmer)*
+*Digital Craftsman with 5D (Developer, Designer, Defender, Digital Sleuth, Decryptor)*
 <br /> 
 
 <!--Start Intro-->               
-<p align="left">I am a Full Stack Developer and Machine Learning Enthusiast with a huge love for Python, React.js, Node.js, Django, RDBMS, REST API and Data Visualization. </p>
+<p align="left">I’m a Full Stack Developer, Graphic Designer, and Cybersecurity Enthusiast with a strong passion for Python, Django, Flutter, Flutterflow, Wordpress, Photoshop, Aurdiuno, STM, Raspberry Pi and Machine Learning. </p>
 
-- ✨ Student of life :)
+- ✨ Student of life :) CSE at [BRAC University](https://www.bracu.ac.bd/)
 - 🌱 I’m currently learning many things, I believe that everyday is a learning opportunity.
-- 💁‍♂️ Trusted member and Moderator at [DEV Community](https://dev.to)
-- 🏙 A lifetime insider and Mentor at [Exercism](https://exercism.org/profiles/Kiran1689).
-- ✍ I write technical blogs, You can visit my blog site at [DEV](https://dev.to/dev_kiran).
+- 💁‍♂️ Trusted member and part of the Operations Moderation Team at [BRACU Duburi](https://bracu-duburi.com/)
+- 🏙 A lifetime insider and Mentor at [Course Hero](https://www.coursehero.com/profile/withishtiaq/).
+- ✍ I write technical blogs, You can visit my blog site at [DEV](https://dev.to/withishtiaq).
 - ❤ Contributing to Open Source.
-- 💻 Visit my [Portfolio](https://kiran1689.github.io) for more details about me.
+- 💻 Visit my [Portfolio](https://withishtaq.github.io) for more details about me.
 <!--End Intro-->
 
 <!--Profile Count Badge-->
