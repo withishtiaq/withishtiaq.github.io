@@ -21,7 +21,6 @@
 - ✍ I write technical blogs, You can visit my blog site at [DEV](https://dev.to/withishtiaq).
 - ❤ Contributing to Open Source.
 - 💻 Visit my [Resume](https://drive.google.com/file/d/1VWK8L2A2_ycXC2GiopDkuyG-VqW0VLO-/view?usp=sharing) for more details about me.
-<!- -  💻 Visit my [Portfolio](https://withishtaq.github.io) for more details about me. -->
 <!--End Intro-->
 
 <!--Profile Count Badge-->
@@ -50,7 +49,7 @@
   
 <h3 align="left">Latest Blog Posts</h3>
 <ul align="left">
-  <li><a href="https://dev.to/dev_kiran/debug-like-a-pro-in-2025-3lg1">😎Debug Like a Pro in 2025🧑‍💻</a></li>
+  <li><a href="https://dev.to/withishtiaq/unlock-pro-level-debugging-skills-in-2025-325p">😎Unlock Pro-Level Debugging Skills in 2025🧑‍💻</a></li>
   <li><a href="https://dev.to/dev_kiran/open-source-hidden-gems-v2-4e8j">✨Open-Source Hidden Gems v2🤯</a></li>
   <li><a href="https://dev.to/dev_kiran/you-should-try-these-tools-in-your-next-project-469">🫵You Should Try These Tools In Your Next Project</a></li>
 </ul>
