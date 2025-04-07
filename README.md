@@ -43,15 +43,15 @@
 <h3 align="left">Current Learning</h3>
 <ul align="left">
   <li>Deepening my knowledge in Machine Learning and AI.</li>
-  <li>Exploring advanced React.js patterns and state management techniques.</li>
+  <li>Unpacking cutting-edge approaches to cybersecurity management.</li>
   <li>Improving my skills in cloud computing with AWS and Azure.</li>
 </ul>
   
 <h3 align="left">Latest Blog Posts</h3>
 <ul align="left">
   <li><a href="https://dev.to/withishtiaq/unlock-pro-level-debugging-skills-in-2025-325p">😎Unlock Pro-Level Debugging Skills in 2025🧑‍💻</a></li>
-  <li><a href="https://dev.to/dev_kiran/open-source-hidden-gems-v2-4e8j">✨Open-Source Hidden Gems v2🤯</a></li>
-  <li><a href="https://dev.to/dev_kiran/you-should-try-these-tools-in-your-next-project-469">🫵You Should Try These Tools In Your Next Project</a></li>
+  <li><a href="https://dev.to/withishtiaq/demystifying-penetration-testing-a-hackers-mindset-for-better-security-26pn">🔐A Hacker’s Mindset for Better Security🤯</a></li>
+  <li><a href="https://dev.to/withishtiaq/you-should-try-these-tools-in-your-next-project-45i7">🫵You Should Try These Tools In Your Next Project</a></li>
 </ul>
 <br />
 <br />
@@ -255,26 +255,26 @@
 <div align="center">
   
 <a href="mailto:kirannaragund197@gmail.com" target="_blank">
-<img src="./gmail.png" width=50 height=50 alt="kirannaragund197@gmail.com" style="margin-bottom: 5px;" />
+<img src="./gmail.png" width=50 height=50 alt="withishtiaq@gmail.com" style="margin-bottom: 5px;" />
 </a>
 
-<a href="https://x.com/kiran__a__n" target="_blank">
+<a href="https://x.com/withishtiaq" target="_blank">
 <img src="./twitter.png" width=50 height=50 alt="kiran__a__n" style="margin-bottom: 5px;" />
 </a>
 
-<a href="https://www.instagram.com/kiran_a_n" target="_blank">
+<a href="https://www.instagram.com/withishtiaq?igsh=NzlmcjZ6dmI1dzNl" target="_blank">
 <img src="./instagram.png" width=50 height=50 alt="kiran_a_n" style="margin-bottom: 5px;" />
 </a>
 
-<a href="https://www.githubcom/Kiran1689" target="_blank">
+<a href="https://www.githubcom/withishtiaq" target="_blank">
 <img src="./github.png" width=50 height=50 alt="Kiran1689" style="margin-bottom: 5px;" />
 </a>
 
-<a href="https://www.linkedin.com/in/kiran-a-n/" target="_blank">
+<a href="https://www.linkedin.com/in/withishtiaq" target="_blank">
 <img src="./linkedin.png" width=50 height=50 alt="linkedin" style="margin-bottom: 5px;" />
 </a>
 
-<a href="https://dev.to/dev_kiran" target="_blank">
+<a href="https://dev.to/withishtiaq" target="_blank">
 <img src="./dev_to.png" width=50 height=50 alt="dev_kiran" style="margin-bottom: 5px;" />
 </a>
 </div>
@@ -282,7 +282,7 @@
 
 <!--Buy me a coffee-->
 <div align="center">
-<a href="https://www.buymeacoffee.com/Kiran1689" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 200px !important;" ></a>
+<a href="https://buymeacoffee.com/ishtiaq1912?new=1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 200px !important;" ></a>
 </div>
 
 
