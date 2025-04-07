@@ -15,8 +15,8 @@
 <p align="left">I’m a Full Stack Developer, Graphic Designer, and Cybersecurity Enthusiast with a strong passion for Python, Django, Flutter, Flutterflow, Wordpress, Photoshop, Aurdiuno, STM, Raspberry Pi and Machine Learning. </p>
 
 - ✨ Student of life :) CSE at [BRAC University](https://www.bracu.ac.bd/)
-- 🌱 I’m currently learning many things, I believe that everyday is a learning opportunity.
-- 💁‍♂️ Trusted member and part of the Operations Moderation Team at [BRACU Duburi](https://bracu-duburi.com/)
+- 🌱 Learning many things, I believe that everyday is a learning opportunity.
+- 💁‍♂️ Trusted member and part of the Operations Team at [BRACU Duburi](https://bracu-duburi.com/)
 - 🏙 A lifetime insider and Mentor at [Course Hero](https://www.coursehero.com/profile/withishtiaq/).
 - ✍ I write technical blogs, You can visit my blog site at [DEV](https://dev.to/withishtiaq).
 - ❤ Contributing to Open Source.
