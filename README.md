@@ -254,7 +254,7 @@
 <h2 align="center">🤝 Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Mᴇ 🤝 </h2>
 <div align="center">
   
-<a href="mailto:kirannaragund197@gmail.com" target="_blank">
+<a href="mailto:withishtiaq@gmail.com" target="_blank">
 <img src="./gmail.png" width=50 height=50 alt="withishtiaq@gmail.com" style="margin-bottom: 5px;" />
 </a>
 
