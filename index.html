@@ -1318,7 +1318,6 @@
 <!-- Certificates Showcase -->
         
 <!-- Certificates Showcase -->
-<!-- Certificates Showcase -->
 <section class="timeline">
   <div class="title-wrapper">
     <div class="icon-box">
@@ -1329,7 +1328,7 @@
 
   <div class="certificate-grid">
     <div class="certificate-card">
-      <img src="assets/images/certificate/CEH Certificate.jpg" alt="Machine Learning Certificate" class="certificate-thumb" onclick="openLargeView(0)">
+      <img src="assets/images/certificate/CEH Certificate.jpg" alt="Machine Learning Certificate" class="certificate-thumb" onclick="openModal(0)">
       <h4 class="h4">Machine Learning Specialization</h4>
       <p class="issuer">Coursera - Stanford University</p>
       <span class="year">2022</span>
@@ -1337,7 +1336,7 @@
     </div>
 
     <div class="certificate-card">
-      <img src="assets/images/certificate/Ishtiaq Ahmed TM.png" alt="Deep Learning Certificate" class="certificate-thumb" onclick="openLargeView(1)">
+      <img src="assets/images/certificate/Ishtiaq Ahmed TM.png" alt="Deep Learning Certificate" class="certificate-thumb" onclick="openModal(1)">
       <h4 class="h4">Deep Learning with TensorFlow</h4>
       <p class="issuer">Google</p>
       <span class="year">2021</span>
@@ -1345,7 +1344,7 @@
     </div>
 
     <div class="certificate-card">
-      <img src="images/cp-cert.jpg" alt="Competitive Programming Certificate" class="certificate-thumb" onclick="openLargeView(2)">
+      <img src="images/cp-cert.jpg" alt="Competitive Programming Certificate" class="certificate-thumb" onclick="openModal(2)">
       <h4 class="h4">Competitive Programming Bootcamp</h4>
       <p class="issuer">Codeforces</p>
       <span class="year">2020</span>
@@ -1358,12 +1357,14 @@
 <div id="imgModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <div class="modal-body">
-    <button class="btn-prev" onclick="changeCertificate(-1)">&#10094; Previous</button>
     <img class="modal-content" id="modalImage">
-    <button class="btn-next" onclick="changeCertificate(1)">Next &#10095;</button>
     <a id="downloadBtn" href="#" download class="btn-download">
       <ion-icon name="download-outline"></ion-icon> Download Certificate
     </a>
+    <div class="modal-controls">
+      <button class="modal-btn" onclick="changeImage(-1)">Previous</button>
+      <button class="modal-btn" onclick="changeImage(1)">Next</button>
+    </div>
   </div>
 </div>
 
@@ -1372,229 +1373,79 @@
   <span class="close" onclick="closeLargeView()">&times;</span>
   <div class="large-view-body">
     <img id="largeCertificateImage" src="" alt="Certificate" />
-    <button class="btn-prev" onclick="changeLargeView(-1)">&#10094; Previous</button>
-    <button class="btn-next" onclick="changeLargeView(1)">Next &#10095;</button>
-    <a id="largeDownloadBtn" href="#" download class="btn-download">
-      <ion-icon name="download-outline"></ion-icon> Download Certificate
-    </a>
   </div>
 </div>
 
 <style>
-  /* Certificate Grid */
-  .certificate-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-
-  .certificate-card {
-    background: #fff;
-    border-left: 5px solid #ffb400;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-align: center;
-  }
-
-  .certificate-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  }
-
-  .certificate-thumb {
-    width: 100%;
-    max-height: 150px;
-    object-fit: contain;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #eee;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-
-  .certificate-thumb:hover {
-    transform: scale(1.05);
-  }
-
-  .certificate-card h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #333;
-  }
-
-  .certificate-card .issuer {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 5px 0;
-  }
-
-  .certificate-card .year {
-    display: inline-block;
-    margin-top: 5px;
-    font-size: 0.85rem;
-    color: #ff9800;
-    font-weight: 600;
-  }
-
-  .certificate-card .btn-view {
-    display: inline-block;
+  /* New styles for modal controls */
+  .modal-controls {
     margin-top: 10px;
-    padding: 5px 12px;
-    background: #ffb400;
+  }
+
+  .modal-btn {
+    padding: 8px 16px;
+    background-color: #ffb400;
     color: #fff;
     border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    transition: background 0.3s;
-  }
-
-  .certificate-card .btn-view:hover {
-    background: #e09e00;
-  }
-
-  /* Modal for Certificate */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.85);
-    text-align: center;
-  }
-
-  .modal-body {
-    display: inline-block;
-    background: #222;
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 90%;
-  }
-
-  .modal-content {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  }
-
-  /* Large View for Certificates */
-  .large-view-modal {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    text-align: center;
-  }
-
-  .large-view-body {
-    display: inline-block;
-    background: #222;
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 90%;
-  }
-
-  #largeCertificateImage {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-
-  .close:hover {
-    color: #ffb400;
-  }
-
-  .btn-prev, .btn-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 1.5rem;
     border: none;
-    padding: 15px;
     cursor: pointer;
-    border-radius: 50%;
-    z-index: 100;
+    transition: background-color 0.3s;
   }
 
-  .btn-prev {
-    left: 20px;
+  .modal-btn:hover {
+    background-color: #e09e00;
   }
 
-  .btn-next {
-    right: 20px;
+  .modal-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 </style>
 
 <script>
-  // Certificate images array
-  const certificates = [
+  const certificateImages = [
     'images/ml-cert.jpg',
     'images/dl-cert.jpg',
     'images/cp-cert.jpg'
   ];
-  let currentCertificateIndex = 0;
+
+  let currentIndex = 0;
+
+  function openModal(index) {
+    currentIndex = index;
+    document.getElementById("imgModal").style.display = "block";
+    document.getElementById("modalImage").src = certificateImages[currentIndex];
+    document.getElementById("downloadBtn").href = certificateImages[currentIndex];
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
 
   function openLargeView(index) {
-    currentCertificateIndex = index;
+    currentIndex = index;
     document.getElementById("largeViewModal").style.display = "block";
-    document.getElementById("largeCertificateImage").src = certificates[currentCertificateIndex];
-    document.getElementById("largeDownloadBtn").href = certificates[currentCertificateIndex];
+    document.getElementById("largeCertificateImage").src = certificateImages[currentIndex];
   }
 
   function closeLargeView() {
     document.getElementById("largeViewModal").style.display = "none";
   }
 
-  function changeLargeView(direction) {
-    currentCertificateIndex += direction;
-    if (currentCertificateIndex < 0) currentCertificateIndex = certificates.length - 1;
-    if (currentCertificateIndex >= certificates.length) currentCertificateIndex = 0;
-    document.getElementById("largeCertificateImage").src = certificates[currentCertificateIndex];
-    document.getElementById("largeDownloadBtn").href = certificates[currentCertificateIndex];
-  }
-
-  function changeCertificate(direction) {
-    currentCertificateIndex += direction;
-    if (currentCertificateIndex < 0) currentCertificateIndex = certificates.length - 1;
-    if (currentCertificateIndex >= certificates.length) currentCertificateIndex = 0;
-    document.getElementById("modalImage").src = certificates[currentCertificateIndex];
-  }
-
-  function closeModal() {
-    document.getElementById("imgModal").style.display = "none";
+  function changeImage(direction) {
+    const newIndex = currentIndex + direction;
+    if (newIndex >= 0 && newIndex < certificateImages.length) {
+      currentIndex = newIndex;
+      document.getElementById("modalImage").src = certificateImages[currentIndex];
+      document.getElementById("downloadBtn").href = certificateImages[currentIndex];
+    }
   }
 </script>
 
 <!-- Ionicons (for download icon) -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 
 
