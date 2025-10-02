@@ -1317,6 +1317,7 @@
             <!-- Certificates Showcase -->
 <!-- Certificates Showcase -->
         
+<!-- Certificates Showcase -->
 <section class="timeline">
   <div class="title-wrapper">
     <div class="icon-box">
@@ -1327,27 +1328,27 @@
 
   <div class="certificate-grid">
     <div class="certificate-card">
-      <img src="assets/images/certificate/CEH Certificate.jpg" alt="CEH Certificate" class="certificate-thumb" onclick="openLargeView(0)">
-      <h4 class="h4">Certified Ethical Hacker</h4>
-      <p class="issuer">Team Matrix - Elite Hacker</p>
-      <span class="year">2024</span>
-      <button onclick="openLargeView(0)" class="btn-view">View Certificate</button>
+      <img src="assets/images/certificate/CEH Certificate.jpg" alt="Machine Learning Certificate" class="certificate-thumb" onclick="openModal(this.src, 'images/ml-cert.jpg')">
+      <h4 class="h4">Machine Learning Specialization</h4>
+      <p class="issuer">Coursera - Stanford University</p>
+      <span class="year">2022</span>
+      <button onclick="openLargeView('assets/images/certificate/CEH Certificate.jpg')" class="btn-view">View Certificate</button>
     </div>
 
     <div class="certificate-card">
-      <img src="images/dl-cert.jpg" alt="Deep Learning Certificate" class="certificate-thumb" onclick="openLargeView(1)">
+      <img src="images/dl-cert.jpg" alt="Deep Learning Certificate" class="certificate-thumb" onclick="openModal(this.src, 'images/dl-cert.jpg')">
       <h4 class="h4">Deep Learning with TensorFlow</h4>
       <p class="issuer">Google</p>
       <span class="year">2021</span>
-      <button onclick="openLargeView(1)" class="btn-view">View Certificate</button>
+      <button onclick="openLargeView('images/dl-cert.jpg')" class="btn-view">View Certificate</button>
     </div>
 
     <div class="certificate-card">
-      <img src="images/cp-cert.jpg" alt="Competitive Programming Certificate" class="certificate-thumb" onclick="openLargeView(2)">
+      <img src="images/cp-cert.jpg" alt="Competitive Programming Certificate" class="certificate-thumb" onclick="openModal(this.src, 'images/cp-cert.jpg')">
       <h4 class="h4">Competitive Programming Bootcamp</h4>
       <p class="issuer">Codeforces</p>
       <span class="year">2020</span>
-      <button onclick="openLargeView(2)" class="btn-view">View Certificate</button>
+      <button onclick="openLargeView('images/cp-cert.jpg')" class="btn-view">View Certificate</button>
     </div>
   </div>
 </section>
@@ -1356,9 +1357,7 @@
 <div id="imgModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <div class="modal-body">
-    <button class="btn-prev" onclick="changeCertificate(-1)">&#10094; Previous</button>
     <img class="modal-content" id="modalImage">
-    <button class="btn-next" onclick="changeCertificate(1)">Next &#10095;</button>
     <a id="downloadBtn" href="#" download class="btn-download">
       <ion-icon name="download-outline"></ion-icon> Download Certificate
     </a>
@@ -1370,11 +1369,6 @@
   <span class="close" onclick="closeLargeView()">&times;</span>
   <div class="large-view-body">
     <img id="largeCertificateImage" src="" alt="Certificate" />
-    <a id="largeDownloadBtn" href="#" download class="btn-download">
-      <ion-icon name="download-outline"></ion-icon> Download Certificate
-    </a>
-    <button class="btn-prev" onclick="changeLargeView(-1)">&#10094; Previous</button>
-    <button class="btn-next" onclick="changeLargeView(1)">Next &#10095;</button>
   </div>
 </div>
 
@@ -1483,28 +1477,6 @@
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   }
 
-  .btn-prev, .btn-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 1.5rem;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 100;
-  }
-
-  .btn-prev {
-    left: 20px;
-  }
-
-  .btn-next {
-    right: 20px;
-  }
-
   /* Large View for Certificates */
   .large-view-modal {
     display: none;
@@ -1551,47 +1523,30 @@
 </style>
 
 <script>
-  const certificates = [
-    'images/ml-cert.jpg',
-    'images/dl-cert.jpg',
-    'images/cp-cert.jpg'
-  ];
-  let currentCertificateIndex = 0;
-
-  function openLargeView(index) {
-    currentCertificateIndex = index;
-    document.getElementById("largeViewModal").style.display = "block";
-    document.getElementById("largeCertificateImage").src = certificates[currentCertificateIndex];
-    document.getElementById("largeDownloadBtn").href = certificates[currentCertificateIndex];
-  }
-
-  function closeLargeView() {
-    document.getElementById("largeViewModal").style.display = "none";
-  }
-
-  function changeLargeView(direction) {
-    currentCertificateIndex += direction;
-    if (currentCertificateIndex < 0) currentCertificateIndex = certificates.length - 1;
-    if (currentCertificateIndex >= certificates.length) currentCertificateIndex = 0;
-    document.getElementById("largeCertificateImage").src = certificates[currentCertificateIndex];
-    document.getElementById("largeDownloadBtn").href = certificates[currentCertificateIndex];
-  }
-
-  function changeCertificate(direction) {
-    currentCertificateIndex += direction;
-    if (currentCertificateIndex < 0) currentCertificateIndex = certificates.length - 1;
-    if (currentCertificateIndex >= certificates.length) currentCertificateIndex = 0;
-    document.getElementById("modalImage").src = certificates[currentCertificateIndex];
+  function openModal(src, downloadLink) {
+    document.getElementById("imgModal").style.display = "block";
+    document.getElementById("modalImage").src = src;
+    document.getElementById("downloadBtn").href = downloadLink;
   }
 
   function closeModal() {
     document.getElementById("imgModal").style.display = "none";
+  }
+
+  function openLargeView(certImage) {
+    document.getElementById("largeViewModal").style.display = "block";
+    document.getElementById("largeCertificateImage").src = certImage;
+  }
+
+  function closeLargeView() {
+    document.getElementById("largeViewModal").style.display = "none";
   }
 </script>
 
 <!-- Ionicons (for download icon) -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 
             <!-- <li class="timeline-item">
